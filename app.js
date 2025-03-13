@@ -74,10 +74,10 @@ const sessionOptions = {
     },
 }
 
-// app.get("/", (req, res) => {
-//     res.send("hii I'm root");
-
-// })
+app.get("/", (req, res) => {
+    // res.send("hii I'm root");
+    res.redirect("/listings");
+})
 
 app.use(session(sessionOptions));
 app.use(flash());
